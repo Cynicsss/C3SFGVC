@@ -1,0 +1,22 @@
+{
+    "jobName": "test_76613335",
+    "image": "192.168.193.253:5000/pytorch",
+    "authFile": "",
+    "dataDir": "",
+    "outputDir": "",
+    "codeDir": "$PAI_DEFAULT_FS_URI/Users/$PAI_USER_NAME/$PAI_USER_NAME~$PAI_JOB_NAME",
+    "virtualCluster": "default",
+    "gpuType": "",
+    "retryCount": 0,
+    "taskRoles": [
+        {
+            "name": "task",
+            "taskNumber": 1,
+            "cpuNumber": 6,
+            "memoryMB": 8000,
+            "shmMB": 3000,
+            "gpuNumber": 1,
+            "command": "cd $PAI_JOB_NAME && bash setup.sh"
+        }
+    ]
+}
